@@ -45,9 +45,13 @@
 		exit();
 	}
 	
+	//Current date and time for INSERT query
+	$date = date("Y-m-d");
+	$time = date("H:i:s");
+
 	//Create INSERT query
 	$memberid = $_SESSION['SESS_MEMBER_ID'];
-	$qry = "INSERT INTO orders(member_id, name, pizza, size, extracheese, garlic, oregano, note) VALUES('$memberid','$name','$pizza','$size','$extra1','$extra2','$extra3','$note')";
+	$qry = "INSERT INTO pr_orders(member_id, order_customer_name, order_product, order_size, e1_extracheese, e2_garlic, e3_oregano, order_note, order_date, order_time) VALUES('$memberid','$name','$pizza','$size','$extra1','$extra2','$extra3','$note','$date','$time')";
 	$result = @mysqli_query($conn, $qry);
 	
 	//Check whether the query was successful or not

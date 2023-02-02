@@ -37,7 +37,7 @@
 	}
 	
 	//Create query
-	$qry = "SELECT * FROM members WHERE login='$login'";
+	$qry = "SELECT * FROM pr_members WHERE login='$login'";
 	$result = mysqli_query($conn, $qry);
 	$member = mysqli_fetch_assoc($result);
 

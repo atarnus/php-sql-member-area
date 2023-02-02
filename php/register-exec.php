@@ -49,7 +49,7 @@
 	
 	//Check for duplicate login ID
 	if($login != '') {
-		$qry = "SELECT * FROM members WHERE login='$login'";
+		$qry = "SELECT * FROM pr_members WHERE login='$login'";
 		$result = mysqli_query($conn, $qry);
 		if($result) {
 			if(mysqli_num_rows($result) > 0) {
@@ -75,7 +75,7 @@
 	$hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
 	//Create INSERT query
-	$qry = "INSERT INTO members(firstname, lastname, login, passwd) VALUES('$fname','$lname','$login','$hashedPwd')";
+	$qry = "INSERT INTO pr_members(firstname, lastname, login, passwd) VALUES('$fname','$lname','$login','$hashedPwd')";
 	$result = @mysqli_query($conn, $qry);
 	
 	//Check whether the query was successful or not
