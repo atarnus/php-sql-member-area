@@ -54,7 +54,7 @@
 			$_SESSION['SESS_LAST_NAME'] = $member['lastname'];
 			$_SESSION['SESS_LOGIN'] = $member['login'];
 			session_write_close();
-			header("location: ../member-index.php");
+			header("location: ../index.php");
 			exit();
 
 		} else {

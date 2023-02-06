@@ -1,79 +1,76 @@
 <?php
 	session_start();
+    $title = 'Register';
+    require_once('php/head.php');
+    include_once('php/navbar.php');
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Login Form</title>
-        <link href="css/css.css" rel="stylesheet">
-    </head>
+
     <body>
 
-        <div class="med">
+        <div class="wide">
 
-            <form id="loginForm" name="loginForm" method="post" action="php/register-exec.php">
+            <form id="loginForm" name="loginForm" method="post" action="php/register-exe.php">
                 
-                <h1 class="center">Register</h1>
+                <h1>Register</h1>
 
                 <div class="row">
-                    <div class="col-50">
-                        <label class="right" for="fname">First name:</label>
+                    <div class="col-20">
+                        <label for="fname">First name:</label>
                     </div>
-                    <div class="col-50">
+                    <div class="col-80">
                         <input name="fname" type="text" class="textfield" id="fname" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-50">
-                        <label class="right" for="lname">Last name:</label>
+                    <div class="col-20">
+                        <label for="lname">Last name:</label>
                     </div>
-                    <div class="col-50">
+                    <div class="col-80">
                         <input name="lname" type="text" class="textfield" id="lname" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-50">
-                        <label class="right" for="login">E-mail/Login:</label>
+                    <div class="col-20">
+                        <label for="login">E-mail/Login:</label>
                     </div>
-                    <div class="col-50">
+                    <div class="col-80">
                         <input name="login" type="text" class="textfield" id="login" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-50">
-                        <label class="right" for="login">Password:</label>
+                    <div class="col-20">
+                        <label for="login">Password:</label>
                     </div>
-                    <div class="col-50">
+                    <div class="col-80">
                         <input name="password" type="password" class="textfield" id="password" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-50">
-                        <label class="right" for="login">Confirm Password:</label>
+                    <div class="col-20">
+                        <label for="login">Confirm Password:</label>
                     </div>
-                    <div class="col-50">
+                    <div class="col-80">
                         <input name="cpassword" type="password" class="textfield" id="cpassword" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-50">&nbsp;</div>
-                    <div class="col-50 left"><input type="submit" name="Submit" value="Register" /></div>
+                    <div class="col-20">&nbsp;</div>
+                    <div class="col-80 left"><input type="submit" name="Submit" value="Register" /></div>
                 </div> 
             </form>
 
             <div class="row">
-                <div class="col-50">&nbsp;</div>
-                <div class="col-50"><?php include('php/error.php'); ?></div>
+                <div class="col-20">&nbsp;</div>
+                <div class="col-80"><?php include('php/error.php'); ?></div>
             </div>
 
-        <h3 class="center">Already a member?</h3>
-        <p class="center"><a href="login.php">Click here to sign in</a></p>
+        <h3>Already a member?</h3>
+        <p><a href="login.php">Click here to sign in</a></p>
 
     </body>
 </html>

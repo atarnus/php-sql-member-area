@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Login Failed</title>
-    <link href="css/css.css" rel="stylesheet" type="text/css" />
-  </head>
+<?php
+    $title = 'Login Failed';
+    require_once('php/head.php');
+    include_once('php/navbar.php');
+?>
   <body>
-    <div class="med center">
+    <div class="wide">
       <h1>Login Failed </h1>
       <p>Please check your username and password.</p>
 			<p><a href="login.php">Click here to sign in</a></p>

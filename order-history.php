@@ -1,26 +1,15 @@
 <?php
-    //Check login
-	require_once('php/auth.php');
-
-    //Connection and databse details
+    require_once('php/auth.php');
     require_once('php/connect.php');
-
-    //Get member ID from session
+    $title = 'Order History';
+    require_once('php/head.php');
+    include_once('php/navbar.php');
     $memberid = $_SESSION['SESS_MEMBER_ID'];
 ?>
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Order history</title>
-		<link href="css/css.css" rel="stylesheet" type="text/css" />
-	</head>
 	<body>
         <div class="wide">
-            <h1>Welcome <?php echo $_SESSION['SESS_FIRST_NAME'];?></h1>
-            <p class="nav"><a href="member-index.php">Profile</a> | <a href="order.php">Order</a> | <a href="logout.php">Logout</a></p>
-            <h2>Order history</h2>
+            <h1>Order history</h1>
             <p>
                 <table>
                     <?php
@@ -33,7 +22,7 @@
                         if ($resultCheck > 0) {
 
                             //Print the colum headings if any orders found
-                            echo '<tr><th>Order #:</th><th>Customer:</th><th>Product:</th><th>Size:</th><th>Extras:</th><th>Note:</th><th colspan="2">Order time:</th></tr>';
+                            echo '<tr><th>Order#:</th><th>Customer:</th><th>Product:</th><th>Size:</th><th>Extras:</th><th>Note:</th><th colspan="2">Order time:</th></tr>';
 
                             //Loop through all the results
                             while ($row = mysqli_fetch_assoc($result)) {

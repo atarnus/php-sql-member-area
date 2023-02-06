@@ -1,19 +1,13 @@
 <?php
 	require_once('php/auth.php');
+    $title = 'Thank You for Your Order';
+    require_once('php/head.php');
+    include_once('php/navbar.php');
 ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Member page</title>
-		<link href="css/css.css" rel="stylesheet" type="text/css" />
-	</head>
 	<body>
-		<div class="med">
-			<h1>Welcome <?php echo $_SESSION['SESS_FIRST_NAME'];?></h1>
-			<p class="nav"><a href="member-index.php">Profile</a> | <a href="order.php">Make an Order</a> | <a href="member-orders.php">Order history</a> | <a href="logout.php">Logout</a></p>
-			<h2>Thank you!</h2>
-			<p>Your order has been places succesfully. Thank you for your order.</p>
+		<div class="wide">
+			<h1>Thank you!</h1>
+			<p>Your order has been placed succesfully. Thank you for ordering.</p>
 		</div>
 	</body>
 </html>
