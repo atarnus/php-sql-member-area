@@ -1,5 +1,5 @@
-<!DOCTYPE html">
-<html">
+<!DOCTYPE html>
+<html>
 	<head>
 		<script>
 			/*to prevent Firefox FOUC, this must be here*/

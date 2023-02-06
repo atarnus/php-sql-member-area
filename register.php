@@ -36,7 +36,7 @@
                         <label for="login">E-mail/Login:</label>
                     </div>
                     <div class="col-80">
-                        <input name="login" type="text" class="textfield" id="login" />
+                        <input name="login" type="email" class="textfield" id="login" />
                     </div>
                 </div>
 

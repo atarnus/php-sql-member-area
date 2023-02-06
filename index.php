@@ -1,5 +1,8 @@
 <?php
-	require_once('php/auth.php');
+	session_start();
+	if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
+		header("location: login.php");
+	}
     $title = 'Home';
     require_once('php/head.php');
     include_once('php/navbar.php');

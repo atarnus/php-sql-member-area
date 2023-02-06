@@ -1,5 +1,8 @@
 <?php 
     session_start();
+    if(isset($_SESSION['SESS_MEMBER_ID'])) {
+		header("location: index.php");
+	}
     $title = 'Login';
     require_once('php/head.php');
     include_once('php/navbar.php');
@@ -16,7 +19,7 @@
                         <label for="login">E-mail / Login:</label>
                     </div>
                     <div class="col-80">
-                        <input name="login" type="text" class="textfield" id="login" />
+                        <input name="login" type="email" class="textfield" id="login" />
                     </div>
                 </div>
 

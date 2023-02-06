@@ -1,7 +1,7 @@
 <div class="navbar">
     <div class="wide">
         <div class="row">
-            <div class="col-50">
+            <div class="col-60">
                 <ul>
                     <?php
                         if(isset($_SESSION['SESS_MEMBER_ID'])) {
@@ -25,7 +25,7 @@
                     ?>
                 </ul>
             </div>
-            <div class="col-50">
+            <div class="col-40">
             <?php if(isset($_SESSION['SESS_MEMBER_ID'])) {
                 echo '<h4 class="right">Welcome, ',$_SESSION['SESS_FIRST_NAME'],'</h4></div>';
                 } ?>
