@@ -116,9 +116,10 @@ table {
 th, td {
     padding: 3px 10px;
     border: 1px;
+    /* color: #666666; */
 }
 .topborder {
-    border-top: 1px solid black;
+    border-top: 1px solid #666666;
 }
 
 /* Floats */
