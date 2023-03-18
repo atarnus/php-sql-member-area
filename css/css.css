@@ -97,9 +97,14 @@ label, input, select, textarea {
     margin-top: 10px;
     margin-right: 10px;
 }
-
 .inline label, input {
     display: inline;
+}
+button {
+    width: 50px;
+}
+.offset {
+    margin-left: -30px;
 }
 
 /* Error messages red and italic */
@@ -132,8 +137,4 @@ th, td {
 }
 .right {
     float: right;
-}
-.center {
-    float: center;
-    text-align: center;
 }

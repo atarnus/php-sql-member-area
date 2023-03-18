@@ -1,6 +1,6 @@
 <?php
     require_once('php/auth.php');
-    require_once('php/connect.php');
+    require_once('../../settings.php');
     $title = 'Make an Order';
     require_once('php/head.php');
     include_once('php/navbar.php');
@@ -55,8 +55,11 @@
                 <div class="row">
                     <div class="col-20">&nbsp;
                     </div>
-                    <div class="col-80">
-                        <p><button type="submit" name="update">Update</button></p>
+                    <div class="col-20">
+                        <p><a href="index.php"><button type="button">Back</button></a></p>   
+                    </div>
+                    <div class="col-60">
+                    <p><button type="submit" class="offset" name="update">Update</button></p>
                     </div>
                 </div>
 

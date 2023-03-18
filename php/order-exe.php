@@ -3,7 +3,7 @@
 	session_start();
 	
 	//Include database connection details
-	require_once('connect.php');
+	require_once('../../../settings.php');
 
 	//Include functions
 	require_once('function.php');

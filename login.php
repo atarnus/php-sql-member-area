@@ -48,6 +48,12 @@
             <h3>Not a member yet?</h3>
             <p><a href="register.php">Click here to create an account</a></p>
 
+            <p>&nbsp;</p>
+            <p><i>If you wish to test the site without registering,<br>
+            you can use these credentials:</p>
+            <p>login: test@test.com<br>
+            password: test</i></p>
+
             <!-- <p>Forgot password? <a href="pword.php">Click here.</a></p> -->
         </div>
     </body>

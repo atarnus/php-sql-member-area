@@ -1,6 +1,6 @@
 <?php
     require_once('php/auth.php');
-    require_once('php/connect.php');
+    require_once('../../settings.php');
     $title = 'Order History';
     require_once('php/head.php');
     include_once('php/navbar.php');

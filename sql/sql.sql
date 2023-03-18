@@ -41,7 +41,8 @@ CREATE TABLE `members` (
 
 INSERT INTO `members` (`member_id`, `firstname`, `lastname`, `login`, `passwd`) VALUES
 (4, 'Kassu', 'Possu', 'kassu@possu.fi', '$2y$10$NEPifbegNukgcCWfQQ9/B.BGGb08fcB69eEJsNNck5wurG8Ttuslq'),
-(5, 'din', 'don', 'dunk', '$2y$10$bZbyb179U.S0yaFA1A8cjODZjgtfJf4yjWoR/c7nnIB3QdnH4wJm6');
+(5, 'din', 'don', 'dunk', '$2y$10$bZbyb179U.S0yaFA1A8cjODZjgtfJf4yjWoR/c7nnIB3QdnH4wJm6'),
+(6, 'Test', 'Person', 'test@test.com', '$2y$10$8hkx97mg84hL5YOuPXjwT.8kZfEzAwfnQC1uCCDvodj/HKXxWw2Y6');
 
 -- --------------------------------------------------------
 
@@ -69,7 +70,12 @@ CREATE TABLE `orders` (
 INSERT INTO `orders` (`order_id`, `member_id`, `name`, `pizza`, `size`, `extracheese`, `garlic`, `oregano`, `note`, `time`) VALUES
 (13, 4, 'Kassu Possu', 'vegan', 'medium', 1, 0, 0, '', '2023-01-29 18:26:32'),
 (14, 4, 'Kassu Possu', 'margherita', 'medium', 0, 0, 1, '', '2023-01-29 18:26:48'),
-(15, 4, 'Kassu Possu', 'Veggies Vegan', 'large', 1, 0, 0, '', '2023-01-29 18:34:20');
+(15, 4, 'Kassu Possu', 'Veggies Vegan', 'large', 1, 0, 0, '', '2023-01-29 18:34:20'),
+(16, 5, 'din don', 'Tropicana', 'large', 0, 1, 0, '', '2023-02-02', '10:54:02'),
+(17, 5, 'din don', 'Margherita', 'small', 1, 0, 0, '', '2023-02-03', '00:09:21'),
+(18, 5, 'din don', 'Veggies Vegan', 'large', 0, 1, 0, 'pup', '2023-02-06', '12:04:15'),
+(19, 5, 'din don', 'Veggies Vegan', 'medium', 0, 1, 0, '', '2023-02-06', '12:11:25'),
+(20, 6, 'Test Person', 'Margherita', 'large', 1, 0, 0, '', '2023-03-18', '22:51:10');
 
 --
 -- Indexes for dumped tables
